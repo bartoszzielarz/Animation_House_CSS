@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Domek</title>
+    <style>
+        span {
+            display: inline-block;
+            background-color: grey;
+            color: white;
+            width: 120px;
+            height: 45px;
+            text-align: center;
+            line-height: 45px;
+            font-weight: 700;
+            margin: 150px 0px 0px 160px;
+
+        }
+
+        .dach {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: black;
+            transition: 2.5s;
+        }
+
+        .komin {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: burlywood;
+            transition: 1.8s;
+        }
+
+        .szkielet {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: brown;
+            transition: 0.9s;
+        }
+
+        .drzwi {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            transition: 2s;
+            background-color: cadetblue;
+        }
+
+        .leweOkno {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: orange;
+            transition: 1.1s;
+        }
+
+        .praweOkno {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: orange;
+            transition: 1.7s;
+        }
+
+        span:hover~.dach {
+            position: absolute;
+            top: calc(50% - 70px);
+            left: 50%;
+            width: 100px;
+            height: 100px;
+            transform: translate(-50%, -50%) rotate(360deg) rotate(45deg);
+        }
+
+        span:hover~.szkielet {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 141px;
+            height: 141px;
+            transform: translate(-50%, -50%);
+        }
+
+        span:hover~.drzwi {
+            position: absolute;
+            top: calc(50% + 70px - 30px);
+            left: 50%;
+            width: 60px;
+            height: 60px;
+            transform: translate(-50%, -50%);
+        }
+
+        span:hover~.leweOkno {
+            position: absolute;
+            top: calc(50% - 15px);
+            left: calc(50% - 35px);
+            width: 30px;
+            height: 30px;
+            transform: translate(-50%, -50%);
+        }
+
+        span:hover~.praweOkno {
+            position: absolute;
+            top: calc(50% - 15px);
+            left: calc(50% + 35px);
+            width: 30px;
+            height: 30px;
+            transform: translate(-50%, -50%);
+        }
+
+        span:hover~.komin {
+            position: absolute;
+            top: calc(50% - 100px);
+            left: calc(50% + 35px);
+            width: 30px;
+            height: 60px;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+    </style>
+
+</head>
+
+<body>
+    <span>BUDUJEMY</span>
+    <div class="dach"></div>
+    <div class="komin"></div>
+    <div class="szkielet"></div>
+    <div class="drzwi"></div>
+    <div class="leweOkno"></div>
+    <div class="praweOkno"></div>
+</body>
+
+</html>
